@@ -7,5 +7,9 @@ class App < Sinatra::Base
   end
 
   # Add your post route and action below
+  post '/food' do 
+    # params are the input texts submitted thru the POST method of forms 
+    "My name is #{params[:name]}, and I love #{params[:favorite_food]}."
+  end
 
 end
